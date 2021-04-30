@@ -1,0 +1,167 @@
+header {
+  text-align: center;
+}
+ 
+.nav a {
+  margin-right: 10px;
+}
+
+.container {
+  position: relative;
+  height: 100%;
+}
+ 
+.inner {
+  position: absolute;
+  width: 100%;
+}
+ 
+.fade-enter,
+.fade-appear {
+  opacity: 0;
+}
+ 
+.fade-enter.fade-enter-active,
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 400ms;
+}
+ 
+.fade-exit {
+  opacity: 1;
+}
+ 
+.fade-exit.fade-exit-active {
+  opacity: 0;
+  transition: opacity 200ms;
+}
+
+/** ESTILOS LOGIN **/
+*{
+  box-sizing: border-box;
+}
+body{
+  background-color: #3498DB;
+  font-family: "Arial", sans-serif;
+  padding: 50px;
+}
+.container2{
+  margin: 20px auto;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.exit{
+  float: right;
+}
+
+.container3{
+  margin: 20px auto;
+  padding: 10px;
+  width: 650px;
+  height: 75px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.container3 div{
+  display: inline-block;
+}
+
+.mainTitle{
+  margin: auto;
+  padding: 10px;
+  color: white;
+  border-radius: 5px;
+}
+
+ h1{
+   width: 70%;
+  color: #777;
+  font-size: 32px;
+  margin: 28px auto;
+  margin-bottom: 20px;
+  text-align: center;
+  /*padding-top: 40px;*/
+}
+form{
+  /*padding: 15px;*/
+  text-align: center;
+}
+input{
+  padding: 12px 0;
+  margin-bottom: 10px;
+  border-radius: 3px;
+  border: 2px solid transparent;
+  text-align: center;
+  width: 90%;
+  font-size: 16px;
+  transition: border .2s, background-color .2s;
+}
+form .field{
+  background-color: #ECF0F1;
+}
+form .field:focus {
+  border: 2px solid #3498DB;
+}
+form .btn{
+  background-color: #3498DB;
+  color: #fff;
+  line-height: 25px;
+  cursor: pointer;
+}
+form .btn:hover,
+form .btn:active {
+  background-color: #1F78B4;
+  border: 2px solid #1F78B4;
+}
+.pass-link{
+  text-align: center;
+}
+.pass-link a:link,
+.pass-link a:visited{
+  font-size: 12px;
+  color: #777;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.styled-table thead tr {
+  background-color: gray;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+    padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
