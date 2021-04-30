@@ -1,6 +1,7 @@
 import React from "react";
 
 class Login extends React.Component {
+
     render() {
         return (
         <div className="container2">
@@ -11,6 +12,7 @@ class Login extends React.Component {
                 <input type="submit" onClick={this.handleClick} value="login" className="btn"></input>
             </form>
         </div>
+
         );
     }
     
@@ -45,7 +47,10 @@ class Login extends React.Component {
         
     };
 
-    /**let obtenerHoraObj = {
+    obtenerHora = e => {
+        e.preventDefault();
+
+        let obtenerHoraObj = {
             'time': '11:23:50',
             'timezone': '2'
         };
@@ -63,7 +68,8 @@ class Login extends React.Component {
                 console.log("Time: " + respuestaRest.response.time);
                 console.log("Timezone: " + respuestaRest.response.timezone);
             }
-        );*/
+        );
+    };
  
 }
 export default Login;

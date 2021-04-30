@@ -21,6 +21,8 @@ public class TutenWsMgrImpl implements TutenWsMgr {
 	 */
 	@Override
 	public ObtenerHoraResponse obtenerHora(ObtenerHoraRequest request) {
+		Utils.imprimirRequest(request);
+		
 		Response response = new Response();
 		if(!Utils.validaFormatoRequest(request)) {
 			response.setTime("ERROR FORMATO");
@@ -32,6 +34,8 @@ public class TutenWsMgrImpl implements TutenWsMgr {
 		
 		ObtenerHoraResponse obtenerHoraResponse = new ObtenerHoraResponse();
 		obtenerHoraResponse.setResponse(response);
+		
+		Utils.imprimirResponse(obtenerHoraResponse);
 
 		return obtenerHoraResponse;
 	}

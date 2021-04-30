@@ -6,6 +6,7 @@ import java.util.Calendar;
 import java.util.Date;
 
 import com.jfloresc.tutenws.vo.ObtenerHoraRequest;
+import com.jfloresc.tutenws.vo.ObtenerHoraResponse;
 
 /**
  * 
@@ -83,7 +84,7 @@ public class Utils {
 	public static String retornaCambioTime(ObtenerHoraRequest request) {
 		String salida = null;
 
-		SimpleDateFormat sdf = new SimpleDateFormat("hh:mm:ss");
+		SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
 
 		try {
 			Calendar cal = Calendar.getInstance();
@@ -125,4 +126,23 @@ public class Utils {
 		return null == cadena || cadena.trim().isEmpty();
 	}
 
+	/**
+	 * 
+	 * @param request
+	 */
+	public static void imprimirRequest(ObtenerHoraRequest request) {
+		System.out.println("Imprimiendo datos de entrada");
+		System.out.println("Time: " + request.getTime());
+		System.out.println("Timezone: " + request.getTimezone());
+	}
+	
+	/**
+	 * 
+	 * @param response
+	 */
+	public static void imprimirResponse(ObtenerHoraResponse response) {
+		System.out.println("Imprimiendo datos de salida");
+		System.out.println("Time: " + response.getResponse().getTime());
+		System.out.println("Timezone: " + response.getResponse().getTimezone());
+	}
 }
